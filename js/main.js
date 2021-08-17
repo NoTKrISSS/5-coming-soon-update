@@ -1,3 +1,4 @@
-import { ProgressBars } from "./components/ProgressBars.js";
+import { ProgressBars } from "./components/progress-bar/ProgressBars.js";
+import { progressBarData } from "./components/data/progressBarData.js";
 
-new ProgressBars();
+new ProgressBars(".left-column", progressBarData);
