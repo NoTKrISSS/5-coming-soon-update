@@ -86,7 +86,6 @@ class ProgressBars {
     let HTML = "";
 
     for (const item of this.data) {
-      //trumpesnis budas rasyti for
       if (!this.isValidDataItem(item)) {
         continue;
       }
@@ -97,7 +96,9 @@ class ProgressBars {
                           <div class="value">${item.value}%</div>
                       </div>
                       <div class="bottom">
-                          <div class="progress" style="width: ${item.value}%;"></div>
+                          <div class="progress" style="width: ${item.value}%;">
+                              <div class="bar"></div>
+                          </div>
                       </div>
                   </div>`;
     }
